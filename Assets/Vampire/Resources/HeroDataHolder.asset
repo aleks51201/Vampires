@@ -12,3 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66eaa552f9172549a4169d705809b91, type: 3}
   m_Name: HeroDataHolder
   m_EditorClassIdentifier: 
+  _heroData:
+  - Name: 
+    LvlForOpen: 0
+    Hp: 0
+    MoveSpeed: 0
+    AttackRate: 0
+  - Name: 
+    LvlForOpen: 0
+    Hp: 0
+    MoveSpeed: 0
+    AttackRate: 0
+  name: 
