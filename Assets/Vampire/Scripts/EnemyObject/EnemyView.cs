@@ -2,9 +2,12 @@
 
 namespace Vampire.EnemyObject
 {
-    public class EnemyView:MonoBehaviour
+    public class EnemyView : MonoBehaviour
     {
         private EnemyController _enemyController;
+        private Transform _heroTransform;
+
+        public Transform HeroTransform => _heroTransform;
 
 
         private void Update()
@@ -20,12 +23,12 @@ namespace Vampire.EnemyObject
 
         private void OnEnable()
         {
-            
+
         }
 
         private void OnDisable()
         {
-            
+
         }
     }
 }

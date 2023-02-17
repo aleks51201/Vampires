@@ -3,6 +3,7 @@ using UnityEngine.AI;
 
 namespace Vampire.EnemyObject.Simulations
 {
+    [RequireComponent(typeof(NavMeshAgent))]
     public class FollowMoveLogic
     {
         private NavMeshAgent _navMeshAgent;
