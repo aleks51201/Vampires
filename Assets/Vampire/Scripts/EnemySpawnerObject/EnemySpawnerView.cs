@@ -4,12 +4,14 @@ namespace Vampire.EnemySpawnerObject
 {
     public class EnemySpawnerView:MonoBehaviour
     {
+        [SerializeField] private float _spawnDistance;
         [SerializeField] private GameObject _enemyViewPrefab;
 
         private EnemySpawnerController _enemySpawnerController;
 
 
         public GameObject EnemyViewPrefab => _enemyViewPrefab;
+        public float SpawnDistance => _spawnDistance;
 
 
         public void Spawn(GameObject go, Vector2 position)

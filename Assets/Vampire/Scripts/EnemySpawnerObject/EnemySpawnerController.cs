@@ -25,7 +25,7 @@ namespace Vampire.EnemySpawnerObject
 
         private void Spawn()
         {
-            _enemySpawnerView.Spawn(_enemySpawnerView.EnemyViewPrefab, _enemySpawnerView.transform.position + new Vector3(100, 100));
+            _enemySpawnerView.Spawn(_enemySpawnerView.EnemyViewPrefab, _enemySpawnerView.transform.position + new Vector3(_enemySpawnerView.SpawnDistance,_enemySpawnerView.SpawnDistance ));
         }
 
         private void StartCoroutinr()
