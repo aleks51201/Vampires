@@ -1,5 +1,8 @@
-﻿namespace Vampire.Data
+﻿using UnityEngine;
+
+namespace Vampire.Data
 {
+    [System.Serializable]
     public struct HeroData
     {
         public string Name;
