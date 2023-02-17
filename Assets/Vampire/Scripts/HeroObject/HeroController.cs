@@ -1,10 +1,12 @@
-﻿using System;
+﻿using UnityEngine;
+using Vampire.HeroObject.Simulations;
 
 namespace Vampire.HeroObject
 {
     public class HeroController
     {
         private HeroView _heroView;
+        private MoveLogic _moveLogic;
 
 
         public HeroController(HeroView heroView)
@@ -14,22 +16,19 @@ namespace Vampire.HeroObject
 
         internal void Init()
         {
-            throw new NotImplementedException();
-        }
-
-        internal void OnEnable()
-        {
-            throw new NotImplementedException();
+            _moveLogic = new(_heroView.GetComponent<Rigidbody2D>(), _heroView.transform, 10);
         }
 
         internal void Update()
         {
-            throw new NotImplementedException();
+        }
+
+        internal void OnEnable()
+        {
         }
 
         internal void OnDisable()
         {
-            throw new NotImplementedException();
         }
     }
 }
