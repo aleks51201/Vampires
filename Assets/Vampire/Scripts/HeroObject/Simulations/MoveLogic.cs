@@ -18,9 +18,10 @@ namespace Vampire.HeroObject.Simulations
             _moveSpeed = moveSpeed;
         }
 
-        public void Move(Single moveInput)
+        public void Move(float moveInputHorizontal, float moveInputVertical)
         {
-            _rb.velocity = new Vector2(moveInput * _moveSpeed, _rb.velocity.y);
+            //_rb.velocity = new Vector2(moveInputHorizontal * _moveSpeed, _rb.velocity.y);
+            _rb.velocity = new Vector2(moveInputHorizontal * _moveSpeed, moveInputVertical * _moveSpeed);
         }
     }
 }

@@ -16,11 +16,12 @@ namespace Vampire.HeroObject
 
         internal void Init()
         {
-            _moveLogic = new(_heroView.GetComponent<Rigidbody2D>(), _heroView.transform, 10);
+            _moveLogic = new(_heroView.GetComponent<Rigidbody2D>(), _heroView.transform, 1);
         }
 
         internal void Update()
         {
+            _moveLogic.Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         }
 
         internal void OnEnable()
