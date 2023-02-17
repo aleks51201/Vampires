@@ -8,7 +8,6 @@ namespace Vampire.ScriptableObjects
     public class HeroHolder: ScriptableObject
     {
        [SerializeField] private HeroData[] _heroData;
-       [SerializeField] private string name;
 
         //public HeroData[] HeroData => _heroData;
     }

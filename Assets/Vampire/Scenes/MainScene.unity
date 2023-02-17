@@ -221,11 +221,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _objectToFollow: {fileID: 1266978672}
+--- !u!1 &754953664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4192523482360265371, guid: 9485b3b7d154d2f4b88ed6d918090653, type: 3}
+  m_PrefabInstance: {fileID: 4192523480976513151}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1266978667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6586084430296038686, guid: 6782be605d448654ab1c8bb839d0fa52, type: 3}
+  m_PrefabInstance: {fileID: 6586084430921031231}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1266978672 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6586084430296038682, guid: 6782be605d448654ab1c8bb839d0fa52, type: 3}
   m_PrefabInstance: {fileID: 6586084430921031231}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1266978673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266978667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042e1e7f993ec0c49b9a5e0e3e95a359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyViewPrefab: {fileID: 754953664}
 --- !u!1001 &4192523480976513151
 PrefabInstance:
   m_ObjectHideFlags: 0
