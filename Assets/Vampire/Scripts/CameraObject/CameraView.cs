@@ -4,9 +4,12 @@ namespace Vampire.CameraObject
 {
     public class CameraView: MonoBehaviour
     {
-        [SerializeField] private Transform objectToFollow;
+        [SerializeField] private Transform _objectToFollow;
 
         private CameraController _cameraController;
+
+
+        public Transform ObjectToFollow => _objectToFollow;
 
 
         private void Update()

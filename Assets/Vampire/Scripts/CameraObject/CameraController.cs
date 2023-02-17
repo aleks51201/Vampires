@@ -1,6 +1,4 @@
-﻿
-using System;
-using Vampire.CameraObject.Simulations;
+﻿using Vampire.CameraObject.Simulations;
 
 namespace Vampire.CameraObject
 {
@@ -17,12 +15,12 @@ namespace Vampire.CameraObject
 
         internal void Init()
         {
-            //_followLogic = new(_cameraView.transform, );
-
+            _followLogic = new(_cameraView.transform,_cameraView.ObjectToFollow, _cameraView.transform.position - _cameraView.ObjectToFollow.position);
         }
 
         internal void Update()
         {
+            _followLogic.FollowMove();
         }
     }
 }
