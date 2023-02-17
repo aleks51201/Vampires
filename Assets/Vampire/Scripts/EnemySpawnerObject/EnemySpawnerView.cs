@@ -14,11 +14,11 @@ namespace Vampire.EnemySpawnerObject
         public float SpawnDistance => _spawnDistance;
 
 
-        public void Spawn(GameObject go, Vector2 position)
+/*        public void Spawn(GameObject go, Vector2 position)
         {
             Instantiate(go, position, Quaternion.identity);
         }
-
+*/
         private void Update()
         {
             _enemySpawnerController.Update();
