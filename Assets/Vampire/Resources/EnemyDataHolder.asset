@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e199beb7f49713c4790fa252710eb28e, type: 3}
   m_Name: EnemyDataHolder
   m_EditorClassIdentifier: 
-  _enemyData: []
+  _enemyData:
+  - Name: 
+    Hp: 0
+    MoveSpeed: 0
+    Damage: 0

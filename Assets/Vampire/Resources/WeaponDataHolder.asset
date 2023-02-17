@@ -23,4 +23,4 @@ MonoBehaviour:
         LifeTime: 0
         MoveSpeed: 0
       ShootingType: 0
-      FiringAngle: 
+      FiringAngle: 5a000000

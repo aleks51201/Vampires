@@ -250,6 +250,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnDistance: 20
   _enemyViewPrefab: {fileID: 754953664}
+--- !u!114 &1266978678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266978667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5cf2b83000d299488d43b68769af7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 1745563696}
+--- !u!1 &1745563696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1328794203145451686, guid: 7558ddc244c3eb14d9ce6398cb3d4de9, type: 3}
+  m_PrefabInstance: {fileID: 5325431812994475299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4192523480976513151
 PrefabInstance:
   m_ObjectHideFlags: 0

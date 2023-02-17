@@ -4,7 +4,11 @@ namespace Vampire.GunObject
 {
     public class GunView:MonoBehaviour
     {
+        [SerializeField] private GameObject _bulletPrefab;
+        
         private GunController _gunController;
+
+        public GameObject BulletPrefab => _bulletPrefab;
 
 
         private void Update()
