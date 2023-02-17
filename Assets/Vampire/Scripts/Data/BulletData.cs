@@ -1,5 +1,6 @@
 ﻿namespace Vampire.Data
 {
+    [System.Serializable]
     public struct BulletData
     {
         public string Name;
