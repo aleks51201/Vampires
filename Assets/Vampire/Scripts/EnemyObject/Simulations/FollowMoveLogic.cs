@@ -7,7 +7,10 @@ namespace Vampire.EnemyObject.Simulations
     public class FollowMoveLogic
     {
         private NavMeshAgent _navMeshAgent;
+        private Transform _transform;
+        private Rigidbody2D _rb;
         private Transform _targetTransform;
+        private float _moveSpeed;
 
         public FollowMoveLogic(NavMeshAgent navMeshAgent, Transform targetTransform)
         {
@@ -15,10 +18,19 @@ namespace Vampire.EnemyObject.Simulations
             _targetTransform = targetTransform;
         }
 
+        public FollowMoveLogic(Rigidbody2D enemyRigidbody, Transform enemyTransform,Transform targetTransform,float moveSpeed)
+        {
+            _rb= enemyRigidbody;
+            _transform = enemyTransform;
+            _targetTransform = targetTransform;
+            _moveSpeed = moveSpeed;
+        }
+
 
         public void FollowMove()
         {
-            _navMeshAgent.SetDestination(_targetTransform.position);
+            //_navMeshAgent.SetDestination(_targetTransform.position);
+            _rb.velocity = ( _targetTransform.position- _transform.position )* _moveSpeed;
         }
     }
 }

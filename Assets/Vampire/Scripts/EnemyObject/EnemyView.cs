@@ -4,8 +4,10 @@ namespace Vampire.EnemyObject
 {
     public class EnemyView : MonoBehaviour
     {
+        [SerializeField] private Transform _heroTransform;
+
         private EnemyController _enemyController;
-        private Transform _heroTransform;
+
 
         public Transform HeroTransform => _heroTransform;
 

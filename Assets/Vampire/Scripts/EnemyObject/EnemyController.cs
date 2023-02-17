@@ -1,4 +1,5 @@
-﻿using UnityEngine.AI;
+﻿using UnityEngine;
+using UnityEngine.AI;
 using Vampire.EnemyObject.Simulations;
 
 namespace Vampire.EnemyObject
@@ -17,11 +18,12 @@ namespace Vampire.EnemyObject
 
         internal void Init()
         {
-            _followMoveLogic = new(_enemyView.GetComponent<NavMeshAgent>(), _enemyView.HeroTransform);
+            _followMoveLogic = new(_enemyView.GetComponent<Rigidbody2D>(),_enemyView.transform ,_enemyView.HeroTransform, 1);
         }
 
         internal void Update()
         {
+            _followMoveLogic.FollowMove();
         }
     }
 }
