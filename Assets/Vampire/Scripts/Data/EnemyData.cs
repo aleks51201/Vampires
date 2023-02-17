@@ -1,6 +1,6 @@
 ﻿namespace Vampire.Data
 {
-    public class EnemyData
+    public struct EnemyData
     {
         public string Name;
         public int Hp;
