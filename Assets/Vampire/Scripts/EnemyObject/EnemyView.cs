@@ -12,6 +12,7 @@ namespace Vampire.EnemyObject
 
         public Transform HeroTransform => _heroTransform;
         public float MoveSpeed => _moveSpeed;
+        public int Dmg = 3;
 
 
         private void Update()

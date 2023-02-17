@@ -10,6 +10,7 @@ namespace Vampire.HeroObject
 
 
         public float MoveSpeed => _moveSpeed;
+        public int hp = 10;
 
 
         private void Awake()
@@ -21,6 +22,11 @@ namespace Vampire.HeroObject
         private void Update()
         {
             _heroController.Update();
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            _heroController.OnTriggerEnter(collision);
         }
 
         private void OnEnable()
