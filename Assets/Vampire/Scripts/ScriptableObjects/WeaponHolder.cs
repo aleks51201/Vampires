@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
+using Vampire.Data;
 
 namespace Vampire.ScriptableObjects
 {
     [CreateAssetMenu(fileName = "WeaponDataHolder", menuName = "Weapon Data Holder")]
     public class WeaponHolder:ScriptableObject
     {
+        [SerializeField] private WeaponData[] weaponData;
     }
 }
