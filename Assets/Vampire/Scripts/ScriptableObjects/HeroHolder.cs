@@ -4,7 +4,7 @@ using Vampire.Data;
 
 namespace Vampire.ScriptableObjects
 {
-    [CreateAssetMenu(fileName = "HeroDataHolder", menuName = "Hero Data Holder")]
+    [CreateAssetMenu(fileName = "HeroDataHolder", menuName = "Config/Holder/Hero Data Holder")]
     public class HeroHolder: ScriptableObject
     {
        [SerializeField] private HeroData[] _heroData;
