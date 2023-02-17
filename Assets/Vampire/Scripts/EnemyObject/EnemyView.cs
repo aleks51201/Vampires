@@ -5,11 +5,13 @@ namespace Vampire.EnemyObject
     public class EnemyView : MonoBehaviour
     {
         [SerializeField] private Transform _heroTransform;
+        [SerializeField] private float _moveSpeed;
 
         private EnemyController _enemyController;
 
 
         public Transform HeroTransform => _heroTransform;
+        public float MoveSpeed => _moveSpeed;
 
 
         private void Update()

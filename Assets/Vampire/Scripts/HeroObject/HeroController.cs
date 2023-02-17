@@ -16,7 +16,7 @@ namespace Vampire.HeroObject
 
         internal void Init()
         {
-            _moveLogic = new(_heroView.GetComponent<Rigidbody2D>(), _heroView.transform, 1);
+            _moveLogic = new(_heroView.GetComponent<Rigidbody2D>(), _heroView.transform, _heroView.MoveSpeed);
         }
 
         internal void Update()

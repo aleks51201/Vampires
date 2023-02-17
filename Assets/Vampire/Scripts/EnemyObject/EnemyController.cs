@@ -18,7 +18,7 @@ namespace Vampire.EnemyObject
 
         internal void Init()
         {
-            _followMoveLogic = new(_enemyView.GetComponent<Rigidbody2D>(),_enemyView.transform ,_enemyView.HeroTransform, 1);
+            _followMoveLogic = new(_enemyView.GetComponent<Rigidbody2D>(),_enemyView.transform ,_enemyView.HeroTransform, _enemyView.MoveSpeed);
         }
 
         internal void Update()

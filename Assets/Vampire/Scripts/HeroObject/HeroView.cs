@@ -4,7 +4,12 @@ namespace Vampire.HeroObject
 {
     public class  HeroView:MonoBehaviour
     {
+        [SerializeField] private float _moveSpeed;
+
         private HeroController _heroController;
+
+
+        public float MoveSpeed => _moveSpeed;
 
 
         private void Awake()

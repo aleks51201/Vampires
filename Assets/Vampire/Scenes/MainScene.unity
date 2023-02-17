@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 042e1e7f993ec0c49b9a5e0e3e95a359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spawnDistance: 20
   _enemyViewPrefab: {fileID: 754953664}
 --- !u!1001 &4192523480976513151
 PrefabInstance:
@@ -256,6 +257,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 754953669, guid: 9485b3b7d154d2f4b88ed6d918090653, type: 3}
+      propertyPath: _moveSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 754953669, guid: 9485b3b7d154d2f4b88ed6d918090653, type: 3}
       propertyPath: _heroTransform
       value: 
@@ -374,6 +379,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1266978668, guid: 6782be605d448654ab1c8bb839d0fa52, type: 3}
+      propertyPath: _moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6586084430296038682, guid: 6782be605d448654ab1c8bb839d0fa52, type: 3}
       propertyPath: m_RootOrder
       value: 1
