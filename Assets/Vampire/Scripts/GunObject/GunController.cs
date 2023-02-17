@@ -16,7 +16,7 @@ namespace Vampire.GunObject
 
         internal void Init()
         {
-            _bulletSpawner = new(_gunView.BulletPrefab);
+            _bulletSpawner = new(_gunView.BulletPrefab,_gunView.transform);
             _gunView.StartCoroutine(_bulletSpawner.SpawnBullet());
         }
 
