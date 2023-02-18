@@ -37,7 +37,7 @@ namespace Vampire.BulletObject
             {
                 //_bulletView.transform.position = new Vector3(_bulletView.transform.position.x + Time.deltaTime, 0);
                 //_bulletView.transform.Translate(Vector3.forward * 10 * Time.deltaTime);
-                _bulletView.transform.position = new Vector2(_bulletView.transform.position.x + 1 * Time.deltaTime,_bulletView.transform.position.y);
+                _bulletView.transform.position = new Vector2(_bulletView.transform.position.x + 4 * Time.deltaTime,_bulletView.transform.position.y);
 
             }
         }

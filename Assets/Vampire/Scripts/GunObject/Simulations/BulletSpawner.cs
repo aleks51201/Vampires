@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using Vampire.BulletObject;
 
 namespace Vampire.GunObject.Simulations
 {
@@ -7,18 +8,21 @@ namespace Vampire.GunObject.Simulations
     {
         private GameObject _bulletPrefab;
         private Transform _transform;
+        private int _dmg;
 
-        public BulletSpawner(GameObject bulletPrefab, Transform transform)
+        public BulletSpawner(GameObject bulletPrefab, Transform transform, int dmg)
         {
             _bulletPrefab = bulletPrefab;
             _transform = transform;
+            _dmg = dmg;
         }
 
         public IEnumerator SpawnBullet()
         {
             while (true)
             {
-                UnityEngine.Object.Instantiate(_bulletPrefab, _transform.position, Quaternion.identity);
+                GameObject go = UnityEngine.Object.Instantiate(_bulletPrefab, _transform.position, Quaternion.identity);
+                go.GetComponent<BulletView>().Dmg = _dmg;
                 yield return new WaitForSeconds(5f);
             }
         }

@@ -136,5 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2626c538efdbaa4bb420a3bcdf62732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _heroTransform: {fileID: 6586084430296038682, guid: 6782be605d448654ab1c8bb839d0fa52, type: 3}
-  _moveSpeed: 1
+  _heroTransform: {fileID: 0}
+  _moveSpeed: 0.5
+  Dmg: 3
+  Hp: 15

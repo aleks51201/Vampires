@@ -9,6 +9,7 @@ namespace Vampire.GunObject
         private GunController _gunController;
 
         public GameObject BulletPrefab => _bulletPrefab;
+        public int Dmg = 5;
 
 
         private void Update()

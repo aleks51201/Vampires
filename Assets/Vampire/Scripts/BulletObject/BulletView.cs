@@ -7,6 +7,8 @@ namespace Vampire.BulletObject
         private BulletController _bulletController;
 
 
+        public int Dmg= 0;
+
         private void Update()
         {
             _bulletController.Update();

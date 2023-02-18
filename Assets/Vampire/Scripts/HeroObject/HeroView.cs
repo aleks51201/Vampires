@@ -26,7 +26,7 @@ namespace Vampire.HeroObject
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            _heroController.OnTriggerEnter(collision);
+            _heroController.OnCollisionEnter2D(collision);
         }
 
         private void OnEnable()

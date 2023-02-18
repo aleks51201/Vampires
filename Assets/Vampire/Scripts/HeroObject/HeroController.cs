@@ -27,7 +27,7 @@ namespace Vampire.HeroObject
             _moveLogic.Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         }
 
-        internal void OnTriggerEnter(Collision2D collision)
+        internal void OnCollisionEnter2D(Collision2D collision)
         {
             Debug.Log("collision enter");
             _heroView.hp=_damageLogic.Damage(_heroView.hp, collision);
