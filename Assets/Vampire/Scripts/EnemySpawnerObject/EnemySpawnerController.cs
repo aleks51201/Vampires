@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using Vampire.EnemyObject;
 
 namespace Vampire.EnemySpawnerObject
 {
@@ -26,7 +27,11 @@ namespace Vampire.EnemySpawnerObject
         private void Spawn()
         {
             //_enemySpawnerView.Spawn(_enemySpawnerView.EnemyViewPrefab, _enemySpawnerView.transform.position + new Vector3(_enemySpawnerView.SpawnDistance,_enemySpawnerView.SpawnDistance ));
-            UnityEngine.Object.Instantiate(_enemySpawnerView.EnemyViewPrefab, _enemySpawnerView.transform.position + new Vector3(_enemySpawnerView.SpawnDistance,_enemySpawnerView.SpawnDistance ),Quaternion.identity);
+            GameObject go = UnityEngine.Object.Instantiate(_enemySpawnerView.EnemyViewPrefab, _enemySpawnerView.transform.position + new Vector3(_enemySpawnerView.SpawnDistance, _enemySpawnerView.SpawnDistance), Quaternion.identity);
+            var enenmy = go.GetComponent<EnemyView>();
+            Debug.Log($"enemy {enenmy is null}");
+            enenmy.HeroTransform = _enemySpawnerView.transform;
+            Debug.Log($"hero transform {enenmy.HeroTransform is null}");
         }
 
         private void StartCoroutinr()
